@@ -18,7 +18,7 @@ const
   app = express().use(body_parser.json()); // creates express http server
 
 // defines the page_acces_token and keeps it obscured from other users
-//const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
+const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
 
 // Sets server port and logs message on success
 app.listen(process.env.PORT || 1337, () => console.log('webhook is listening'));
